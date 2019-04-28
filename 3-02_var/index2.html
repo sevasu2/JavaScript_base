@@ -4,28 +4,31 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta http-equiv="x-ua-compatible" content="IE=edge">
-	<title>3-03_if</title>
+	<title>3-03_var</title>
 	<link href="../../_common/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<header>
 		<div class="header-contents">
-			<h1>JavaScriptはどこに書く？</h1>
-			<h2>JavaScriptファイルを読み込む</h2>
+			<h1>入力内容に応じて動作を変更する</h1>
+			<h2>変数に保存された内容で動作を切り替える</h2>
 		</div><!-- /.header-contents -->
 	</header>
 	<div class="main-wrapper">
 		<section>
-			<p id="choice">ここに日時を表示します</p>
+			<p>ブラウザのコンソールを開いてください。</p>
 		</section>
 	</div><!-- /.main-wrapper -->
 	<footer>JavaScript Samples</footer>
 	<script>
 		var answer = window.prompt('ヘルプを見ますか？');
-		console.log(answer);
+		if(answer === 'yes') {
+			window.alert('タップでジャンプ、障害物を避けます。');
+		}
 	</script>
 </body>
 </html>
+
 
 
 
